@@ -1,0 +1,42 @@
+.Evento {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #bbbdc750;
+
+  .tituloContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-grow: 1;
+  }
+
+  .descricao {
+    margin-right: 15px;
+    text-decoration: none;
+    max-width: 400px;
+    overflow-wrap: break-word;
+
+    @media (max-width: 768px) {
+      max-width: 150px; /* Reduz o max-width para telas menores ou iguais a 768px */
+    }
+
+    @media (max-width: 420px) {
+      max-width: 100px; /* Reduz ainda mais o max-width para telas menores ou iguais a 420px */
+    }
+  }
+
+  .icons {
+    display: flex;
+    font-size: 28px;
+    gap: 10px;
+    margin-left: auto;
+  }
+}
+
+.cardsInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
